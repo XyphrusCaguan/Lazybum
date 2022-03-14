@@ -7,26 +7,29 @@ import random
 from csv import writer
 
 def chat_exam():
+    print("Well then I ask few questions for you.")
+    input("You: ")
+
     print("What is your last name?")
-    user_lastName = input("User: ")
+    user_lastName = input("You: ")
     print("What is your first name?")
-    user_firstName = input("User: ")
+    user_firstName = input("You: ")
     print("Your gender?")
-    user_gender = input("User: ")
+    user_gender = input("You: ")
     print("How old are you?")
-    user_age = input("User: ")
+    user_age = input("You: ")
     print("Where do you live?")
-    user_address = input("User: ")
+    user_address = input("You: ")
     print("Question 1")
-    user_q1 = input("User: ")
+    user_q1 = input("You: ")
     print("Question 2")
-    user_q2 = input("User: ")
+    user_q2 = input("You: ")
     print("Question 3")
-    user_q3 = input("User: ")
+    user_q3 = input("You: ")
     print("Question 4")
-    user_q4 = input("User: ")
+    user_q4 = input("You: ")
     print("Question 5")
-    user_q5 = input("User: ")
+    user_q5 = input("You: ")
 
     user_fullName = user_firstName + " " + user_lastName
     df2 = pd.DataFrame([[user_lastName, user_firstName, user_fullName, user_gender, user_age, user_address, user_q1, user_q2, user_q3,  user_q4, user_q5]],
